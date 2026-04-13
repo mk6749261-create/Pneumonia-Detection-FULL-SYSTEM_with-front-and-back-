@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Model</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+  <a href="{{ url_for('index') }}" class="back-btn">← Back</a> CNN Model Architecture
+</header>
+<div class="model-box">
+    <h2>CNN Model Architecture</h2>
+
+    <div class="layer-container">
+
+        <div class="layer">
+            <span class="dot"></span>
+            <h3>CNN Layers</h3>
+            <p>Extracts spatial features using convolution filters</p>
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="layer">
+            <span class="dot"></span>
+            <h3>ReLU Activation</h3>
+            <p>Introduces non-linearity for better learning</p>
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="layer">
+            <span class="dot"></span>
+            <h3>Max Pooling</h3>
+            <p>Reduces spatial dimensions & keeps key features</p>
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="layer">
+            <span class="dot"></span>
+            <h3>Fully Connected</h3>
+            <p>Combines extracted features for classification</p>
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="layer">
+            <span class="dot"></span>
+            <h3>Softmax</h3>
+            <p>Produces final probability of classes</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

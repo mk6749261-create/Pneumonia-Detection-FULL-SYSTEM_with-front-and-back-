@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PneumoScan AI</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="topbar">PneumoScan AI</header>
+
+<section class="hero">
+    <h1>Pneumonia Detection System</h1>
+    <p>Deep Learning Based Chest X-ray Analyzer</p>
+    <div class="cards">
+        <a href="{{ url_for('prediction_page') }}" class="card">Prediction</a>
+        <a href="{{ url_for('model_page') }}" class="card">Model</a>
+        <a href="{{ url_for('analysis_page') }}" class="card">Analysis</a>
+    </div>
+</section>
+<section class="team">
+    <h2>Team Members</h2>
+    <div class="team-grid">
+        <div class="member">
+            <a href="https://www.linkedin.com/in/bavlyfady2705/" target="_blank">
+                Bavly Fady
+                <img src="{{ url_for('static', filename='images/bavly.jpeg') }}" alt="Bavly">
+            </a>
+        </div>
+        <div class="member">
+            <a href="https://www.linkedin.com/in" target="_blank">
+                Mina Emad
+                <img src="{{ url_for('static', filename='images/mina.jpeg') }}" alt="Mina">
+            </a>
+        </div>
+        <div class="member">
+            <a href="https://www.linkedin.com/in/eathar-haytham-764206329/"
+                target="_blank">
+                Eathar Haytham
+                <img src="{{ url_for('static', filename='images/eathar.jpeg') }}" alt="Eathar">
+            </a>
+        </div>
+        <div class="member">
+            <a href="www.linkedin.com/in/radwa-hany-1ba434370" target="_blank">
+                Radwa Hany
+                <img src="{{ url_for('static', filename='images/radwa.jpeg') }}" alt="Radwa">
+            </a>
+        </div>
+        <div class="member">
+            <a href="https://www.linkedin.com/in/mai-kamal-352901288/?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+                Mai Kamal
+                <img src="{{ url_for('static', filename='images/mai.jpeg') }}" alt="Mai">
+            </a>
+        </div>
+        <div class="member">
+            <a href="https://www.linkedin.com/in/febrounia-emad-4a546932a/?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+              Febrounia Emad  
+                <img src="{{ url_for('static', filename='images/Febrounia.jpeg') }}"alt="Febronia">
+            </a>
+        </div>
+    </div>
+</section>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

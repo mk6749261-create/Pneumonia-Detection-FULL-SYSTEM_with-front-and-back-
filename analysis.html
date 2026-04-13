@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Evaluation</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <a href="{{ url_for('index') }}" class="back-btn">← Back</a> Model Evaluation
+</header>
+
+<div class="page">
+
+  <h2>Model Evaluation</h2>
+
+  <div class="metric-card">
+    <h3><i class="fa-solid fa-bullseye"></i> Accuracy</h3>
+    <p class="value">93%</p>
+  </div>
+
+  <div class="metric-card">
+    <h3><i class="fa-solid fa-chart-line"></i> Precision</h3>
+    <p class="value">91%</p>
+  </div>
+
+  <div class="metric-card">
+    <h3><i class="fa-solid fa-arrows-spin"></i> Recall</h3>
+    <p class="value">94%</p>
+  </div>
+
+  <div class="metric-card">
+    <h3><i class="fa-solid fa-scale-balanced"></i> F1 Score</h3>
+    <p class="value">92%</p>
+  </div>
+
+</div>
+
+</body>
+</html>
